@@ -1,0 +1,89 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA MarketingStatus
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote MarketingStatus (5 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA MarketingStatus_Lookup
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote MarketingStatus_Lookup (3 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA applications
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote applications (5 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA submissions
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote submissions (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA products
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote products (5 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table target_data created.
+NOTE: PROC SQL statement used.
+NOTE: DATA target_data
+
+
+NOTE: Read 5 rows from target_data.
+NOTE: Wrote target_data (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA submissions_feat
+
+
+NOTE: Read 5 rows from submissions.
+NOTE: Wrote submissions_feat (5 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA products_feat
+
+
+NOTE: Read 5 rows from products.
+NOTE: Wrote products_feat (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table final_market_continuity created.
+NOTE: PROC SQL statement used.
+NOTE: DATA cleaned_market_continuity
+
+
+NOTE: Read 5 rows from final_market_continuity.
+NOTE: Wrote cleaned_market_continuity (5 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=final_market_continuity
+
+NOTE: PROC PRINT completed: 5 observations printed, 9 variables

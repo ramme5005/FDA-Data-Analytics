@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_market_continuity_classification",
+  "source_file": "SAS Viya Prediction Model/MarketContinuityStatus_ClassificationModel.sas",
+  "source_blob_sha": "2e1120a0bb99e2d1b5295de42257ad9077f45e2b",
+  "source_commit": "b8606db8929112c09d352fe5eaaaf427a12da9f4",
+  "notes": "Market-continuity target + feature build: a lookup join derives MarketingStatusDescription and the target rules set TargetMarketStatus 1/0; the submissions DATA step derives year/month and a priority_group flag (PRIORITY/STANDARD/SPECIAL/UNKNOWN); the products DATA step cleans Form with scan(...,';') and an UNKNOWN default; a five-table left join assembles the model frame and cmiss(of _all_) drops rows with any missing value. Kept the author's DATA-step and join logic verbatim; translated the Viya CAS scaffolding (cas session, caslib, proc casutil promote/save, and an orphan count on a table the script never creates) away and expressed both proc fedsql joins as proc sql, with the casuser.* inputs replaced by 5-row sample tables inlined at the top of script.sas (self-contained) exercising every branch. autoexec.sas holds only options obs=100."
+}
