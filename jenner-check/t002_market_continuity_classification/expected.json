@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-13T04:02:22Z",
+  "_captured_run_id": "r_ab44a5af90f441a28f5f3e8db3e76517",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table target_data created.",
+    "NOTE: Table final_market_continuity created.",
+    "NOTE: Wrote cleaned_market_continuity (5 rows, 9 columns).",
+    "NOTE: PROC PRINT completed: 5 observations printed, 9 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

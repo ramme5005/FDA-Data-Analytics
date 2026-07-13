@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_monthly_submission_forecast",
+  "source_file": "SAS Viya Prediction Model/MonthlySubmissionCount_ForecastingModel.sas",
+  "source_blob_sha": "3e5869fb74dce70a2bc1fc39bd0eda36433e4d4a",
+  "source_commit": "b8606db8929112c09d352fe5eaaaf427a12da9f4",
+  "notes": "Monthly submission-count feature build: DATA steps parse SubmissionStatusDate (datepart), drop blank dates, extract year/month, then a group-by count rolls up per Year/Month and mdy()+monyy7. builds a Date column. Kept the author's DATA-step logic verbatim; translated the Viya CAS scaffolding (cas session, caslib, proc casutil promote/save) away and expressed proc fedsql as proc sql, with casuser.submissions replaced by a 10-row sample (one blank-date row) inlined at the top of script.sas so the bundle is self-contained. autoexec.sas holds only options obs=100."
+}

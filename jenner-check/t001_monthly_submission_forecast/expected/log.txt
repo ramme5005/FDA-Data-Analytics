@@ -1,0 +1,49 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA submissions
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote submissions (10 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA submissions_clean
+
+
+NOTE: Read 10 rows from submissions.
+NOTE: Wrote submissions_clean (9 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA submissions_monthly_clean
+
+
+NOTE: Read 9 rows from submissions_clean.
+NOTE: Wrote submissions_monthly_clean (9 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA submissions_month
+
+
+NOTE: Read 9 rows from submissions_monthly_clean.
+NOTE: Wrote submissions_month (9 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table monthly_submissions created.
+NOTE: PROC SQL statement used.
+NOTE: DATA monthly_submissions_final
+
+
+NOTE: Read 5 rows from monthly_submissions.
+NOTE: Wrote monthly_submissions_final (5 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=monthly_submissions_final
+
+NOTE: PROC PRINT completed: 5 observations printed, 4 variables

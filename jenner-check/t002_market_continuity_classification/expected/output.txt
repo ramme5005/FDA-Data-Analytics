@@ -1,0 +1,8 @@
+
+  Obs  targetmarketstatus  appltype  submissiontype  submissionclasscodeid  submissionstatus  priority_group  year  month        form
+-----  ------------------  --------  --------------  ---------------------  ----------------  --------------  ----  -----  ----------
+    1                   1  NDA       ORIG                               10  AP                PRIORITY        2020      1  TABLET
+    2                   0  ANDA      SUPPL                              11  AP                STANDARD        2020      1  SOLUTION
+    3                   1  NDA       ORIG                               12  AP                SPECIAL         2020      2  CAPSULE
+    4                   1  BLA       ORIG                               10  AP                PRIORITY        2021      2  UNKNOWN
+    5                   0  ANDA      SUPPL                              11  AP                STANDARD        2021      3  INJECTABLE
